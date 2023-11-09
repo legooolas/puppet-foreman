@@ -81,7 +81,7 @@ class foreman::config::apache(
   Stdlib::Absolutepath $ssl_ca = $::foreman::server_ssl_ca,
   Stdlib::Absolutepath $ssl_chain = $::foreman::server_ssl_chain,
   Stdlib::Absolutepath $ssl_cert = $::foreman::server_ssl_cert,
-  Variant[Enum[''], Stdlib::Absolutepath] $ssl_certs_dir = $::foreman::server_ssl_certs_dir,
+  Variant[Undef, Stdlib::Absolutepath] $ssl_certs_dir = $::foreman::server_ssl_certs_dir,
   Stdlib::Absolutepath $ssl_key = $::foreman::server_ssl_key,
   Variant[Enum[''], Stdlib::Absolutepath] $ssl_crl = $::foreman::server_ssl_crl,
   Optional[String] $ssl_protocol = $::foreman::server_ssl_protocol,

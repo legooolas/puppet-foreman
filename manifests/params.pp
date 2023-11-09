@@ -153,7 +153,7 @@ class foreman::params {
   $server_ssl_ca    = "${puppet_ssldir}/certs/ca.pem"
   $server_ssl_chain = "${puppet_ssldir}/certs/ca.pem"
   $server_ssl_cert  = "${puppet_ssldir}/certs/${lower_fqdn}.pem"
-  $server_ssl_certs_dir = '' # lint:ignore:empty_string_assignment - this must be empty since we override a default
+  $server_ssl_certs_dir = undef
   $server_ssl_key   = "${puppet_ssldir}/private_keys/${lower_fqdn}.pem"
   $server_ssl_crl   = "${puppet_ssldir}/crl.pem"
   $server_ssl_protocol = undef

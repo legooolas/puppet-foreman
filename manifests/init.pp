@@ -252,7 +252,7 @@ class foreman (
   Stdlib::Absolutepath $server_ssl_ca = $::foreman::params::server_ssl_ca,
   Stdlib::Absolutepath $server_ssl_chain = $::foreman::params::server_ssl_chain,
   Stdlib::Absolutepath $server_ssl_cert = $::foreman::params::server_ssl_cert,
-  Variant[Enum[''], Stdlib::Absolutepath] $server_ssl_certs_dir = $::foreman::params::server_ssl_certs_dir,
+  Variant[Undef, Stdlib::Absolutepath] $server_ssl_certs_dir = $::foreman::params::server_ssl_certs_dir,
   Stdlib::Absolutepath $server_ssl_key = $::foreman::params::server_ssl_key,
   Variant[Enum[''], Stdlib::Absolutepath] $server_ssl_crl = $::foreman::params::server_ssl_crl,
   Optional[String] $server_ssl_protocol = $::foreman::params::server_ssl_protocol,
